@@ -92,6 +92,7 @@ QWidget* CWidgetRTSP::initializeRTSPShow()
 
     // 监听视频窗口大小变化
     _mVideoWidgetRTSP->installEventFilter(this);
+    _mVideoWidgetRTSP->setFullScreen(true);
 
     return _mVideoWidgetRTSP;
 }
