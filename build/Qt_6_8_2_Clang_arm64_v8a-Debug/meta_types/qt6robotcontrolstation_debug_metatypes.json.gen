@@ -1,0 +1,1374 @@
+[
+    {
+        "classes": [
+            {
+                "className": "CWidgetOverlay",
+                "lineNumber": 8,
+                "object": true,
+                "qualifiedClassName": "CWidgetOverlay",
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QWidget"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "widget_overlay.hpp",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "CWidgetRTSP",
+                "lineNumber": 14,
+                "object": true,
+                "qualifiedClassName": "CWidgetRTSP",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData2",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData3",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "sigGimbalControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData2",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 1,
+                        "isCloned": true,
+                        "name": "sigGimbalControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 2,
+                        "isCloned": true,
+                        "name": "sigGimbalControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 3,
+                        "isCloned": true,
+                        "name": "sigGimbalControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            }
+                        ],
+                        "index": 4,
+                        "isCloned": true,
+                        "name": "sigGimbalControlCmd",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "error",
+                                "type": "QMediaPlayer::Error"
+                            }
+                        ],
+                        "index": 5,
+                        "name": "handleErrorMediaPlayer",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "_iState",
+                                "type": "QMediaPlayer::PlaybackState"
+                            }
+                        ],
+                        "index": 6,
+                        "name": "handleStateChangedMediaPlayer",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "status",
+                                "type": "QMediaPlayer::MediaStatus"
+                            }
+                        ],
+                        "index": 7,
+                        "name": "handleMediaStatusChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "index": 8,
+                        "name": "onPushButtonClickedEvent",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "private",
+                        "arguments": [
+                            {
+                                "name": "iData",
+                                "type": "QByteArray"
+                            }
+                        ],
+                        "index": 9,
+                        "name": "onHandleRecvGimbalData_Test",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QWidget"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "widget_rtsp.hpp",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "CInterfaceRemoteControlSiyi",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "_ENUM_REMOTE_CONTROL_MODE",
+                        "values": [
+                            "REMOTE_CONTROL_LINK_HARDWARE",
+                            "REMOTE_CONTROL_SYS_SETTINGS",
+                            "REMOTE_CONTROL_CHANNEL_DATA",
+                            "REMOTE_CONTROL_DATA_INFO",
+                            "REMOTE_CONTROL_VIDEO_INFO",
+                            "REMOTE_CONTROL_CHANNEL_INFO"
+                        ]
+                    }
+                ],
+                "lineNumber": 8,
+                "object": true,
+                "qualifiedClassName": "CInterfaceRemoteControlSiyi",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceRemoteControlSiyi::_ENUM_REMOTE_CONTROL_MODE"
+                            },
+                            {
+                                "name": "mContext",
+                                "type": "QStringList"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "sigRemoteStateResponse",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceRemoteControlSiyi::_ENUM_REMOTE_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData2",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData3",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "onRemoteControlEvent",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceRemoteControlSiyi::_ENUM_REMOTE_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData2",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 2,
+                        "isCloned": true,
+                        "name": "onRemoteControlEvent",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceRemoteControlSiyi::_ENUM_REMOTE_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 3,
+                        "isCloned": true,
+                        "name": "onRemoteControlEvent",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceRemoteControlSiyi::_ENUM_REMOTE_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 4,
+                        "isCloned": true,
+                        "name": "onRemoteControlEvent",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceRemoteControlSiyi::_ENUM_REMOTE_CONTROL_MODE"
+                            }
+                        ],
+                        "index": 5,
+                        "isCloned": true,
+                        "name": "onRemoteControlEvent",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "private",
+                        "index": 6,
+                        "name": "onHandleRecvRemoteData",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "interface_remote_control_siyi.hpp",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "CWidgetLink",
+                "lineNumber": 7,
+                "object": true,
+                "qualifiedClassName": "CWidgetLink",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceRemoteControlSiyi::_ENUM_REMOTE_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData2",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData3",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "sigRemoteControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceRemoteControlSiyi::_ENUM_REMOTE_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData2",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 1,
+                        "isCloned": true,
+                        "name": "sigRemoteControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceRemoteControlSiyi::_ENUM_REMOTE_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 2,
+                        "isCloned": true,
+                        "name": "sigRemoteControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceRemoteControlSiyi::_ENUM_REMOTE_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 3,
+                        "isCloned": true,
+                        "name": "sigRemoteControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceRemoteControlSiyi::_ENUM_REMOTE_CONTROL_MODE"
+                            }
+                        ],
+                        "index": 4,
+                        "isCloned": true,
+                        "name": "sigRemoteControlCmd",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "index": 5,
+                        "name": "onPushButtonClickedEvent_LinkCtrl",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QWidget"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "widget_link.hpp",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "CInterfaceGimabalSIYI",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "_ENUM_GIMBAL_CONTROL_MODE",
+                        "values": [
+                            "GIMBAL_CMD_FIRMWARE",
+                            "GIMBAL_CMD_HARDWARM",
+                            "GIMBAL_CMD_CTRL_MODE",
+                            "GIMBAL_CMD_ZOOM_MANUAL",
+                            "GIMBAL_CMD_ZOOM_ABSOLUTE",
+                            "GIMBAL_CMD_ZOOM_MAX",
+                            "GIMBAL_CMD_ZOOM_NOW",
+                            "GIMBAL_CMD_TURN",
+                            "GIMBAL_CMD_ZERO",
+                            "GIMBAL_CMD_CONFIG",
+                            "GIMBAL_CMD_FEEDBACK",
+                            "GIMBAL_CMD_CTRL_TURN",
+                            "GIMBAL_CMD_SET_MODE"
+                        ]
+                    }
+                ],
+                "lineNumber": 14,
+                "object": true,
+                "qualifiedClassName": "CInterfaceGimabalSIYI",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            },
+                            {
+                                "name": "mContext",
+                                "type": "QStringList"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "sigGimabalStateResponse",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData2",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData3",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 1,
+                        "name": "onGimbalControlEvent",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData2",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 2,
+                        "isCloned": true,
+                        "name": "onGimbalControlEvent",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 3,
+                        "isCloned": true,
+                        "name": "onGimbalControlEvent",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 4,
+                        "isCloned": true,
+                        "name": "onGimbalControlEvent",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            }
+                        ],
+                        "index": 5,
+                        "isCloned": true,
+                        "name": "onGimbalControlEvent",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "private",
+                        "index": 6,
+                        "name": "onHandleRecvGimbalData",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "interface_gimabal_siyi.hpp",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "CWidgetGimbal",
+                "lineNumber": 11,
+                "object": true,
+                "qualifiedClassName": "CWidgetGimbal",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData2",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData3",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "sigGimbalControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData2",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 1,
+                        "isCloned": true,
+                        "name": "sigGimbalControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 2,
+                        "isCloned": true,
+                        "name": "sigGimbalControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 3,
+                        "isCloned": true,
+                        "name": "sigGimbalControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            }
+                        ],
+                        "index": 4,
+                        "isCloned": true,
+                        "name": "sigGimbalControlCmd",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            },
+                            {
+                                "name": "mContext",
+                                "type": "QStringList"
+                            }
+                        ],
+                        "index": 5,
+                        "name": "onHandleGimabalStateResponse",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "name": "onPushButtonClickedEvent_GimbalCtrl",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QWidget"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "widget_gimbal.hpp",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "CManagerControlMode",
+                "lineNumber": 10,
+                "object": true,
+                "qualifiedClassName": "CManagerControlMode",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData2",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData3",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "sigGimbalControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData2",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 1,
+                        "isCloned": true,
+                        "name": "sigGimbalControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 2,
+                        "isCloned": true,
+                        "name": "sigGimbalControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 3,
+                        "isCloned": true,
+                        "name": "sigGimbalControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            }
+                        ],
+                        "index": 4,
+                        "isCloned": true,
+                        "name": "sigGimbalControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceRobotDeep::_ENUM_ROBOT_DEEP_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData2",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData3",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 5,
+                        "name": "sigRobotControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceRobotDeep::_ENUM_ROBOT_DEEP_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData2",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 6,
+                        "isCloned": true,
+                        "name": "sigRobotControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceRobotDeep::_ENUM_ROBOT_DEEP_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 7,
+                        "isCloned": true,
+                        "name": "sigRobotControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceRobotDeep::_ENUM_ROBOT_DEEP_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 8,
+                        "isCloned": true,
+                        "name": "sigRobotControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceRobotDeep::_ENUM_ROBOT_DEEP_CONTROL_MODE"
+                            }
+                        ],
+                        "index": 9,
+                        "isCloned": true,
+                        "name": "sigRobotControlCmd",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceGimabalSIYI::_ENUM_GIMBAL_CONTROL_MODE"
+                            },
+                            {
+                                "name": "mContext",
+                                "type": "QStringList"
+                            }
+                        ],
+                        "index": 10,
+                        "name": "onHandleGimabalStateResponse",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "CInterfaceRemoteControlSiyi::_ENUM_REMOTE_CONTROL_MODE"
+                            },
+                            {
+                                "name": "mContext",
+                                "type": "QStringList"
+                            }
+                        ],
+                        "index": 11,
+                        "name": "onHandleRemoteStateResponse",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "manager_control_mode.hpp",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "CRobotGroundStation",
+                "lineNumber": 8,
+                "object": true,
+                "qualifiedClassName": "CRobotGroundStation",
+                "slots": [
+                    {
+                        "access": "private",
+                        "index": 0,
+                        "name": "onPushButtonClickedEvent",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QMainWindow"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "robot_ground_station.h",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "CInterfaceRobotDeep",
+                "enums": [
+                    {
+                        "isClass": false,
+                        "isFlag": false,
+                        "name": "_ENUM_ROBOT_DEEP_CONTROL_MODE",
+                        "values": [
+                            "ROBOT_CMD_MODE",
+                            "ROBOT_CMD_AIXS"
+                        ]
+                    }
+                ],
+                "lineNumber": 6,
+                "object": true,
+                "qualifiedClassName": "CInterfaceRobotDeep",
+                "slots": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "_ENUM_ROBOT_DEEP_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData2",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData3",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "onRobotControlEvent",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "_ENUM_ROBOT_DEEP_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData2",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 1,
+                        "isCloned": true,
+                        "name": "onRobotControlEvent",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "_ENUM_ROBOT_DEEP_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 2,
+                        "isCloned": true,
+                        "name": "onRobotControlEvent",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "_ENUM_ROBOT_DEEP_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 3,
+                        "isCloned": true,
+                        "name": "onRobotControlEvent",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iTpye",
+                                "type": "_ENUM_ROBOT_DEEP_CONTROL_MODE"
+                            }
+                        ],
+                        "index": 4,
+                        "isCloned": true,
+                        "name": "onRobotControlEvent",
+                        "returnType": "bool"
+                    },
+                    {
+                        "access": "private",
+                        "index": 5,
+                        "name": "onHandleRecvRobotData",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "interface_robot_deep.hpp",
+        "outputRevision": 68
+    },
+    {
+        "classes": [
+            {
+                "className": "CWidgetDeepRobot",
+                "lineNumber": 7,
+                "object": true,
+                "qualifiedClassName": "CWidgetDeepRobot",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iType",
+                                "type": "CInterfaceRobotDeep::_ENUM_ROBOT_DEEP_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData2",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData3",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 0,
+                        "name": "sigRobotControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iType",
+                                "type": "CInterfaceRobotDeep::_ENUM_ROBOT_DEEP_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData2",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 1,
+                        "isCloned": true,
+                        "name": "sigRobotControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iType",
+                                "type": "CInterfaceRobotDeep::_ENUM_ROBOT_DEEP_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            },
+                            {
+                                "name": "iData1",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 2,
+                        "isCloned": true,
+                        "name": "sigRobotControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iType",
+                                "type": "CInterfaceRobotDeep::_ENUM_ROBOT_DEEP_CONTROL_MODE"
+                            },
+                            {
+                                "name": "iData0",
+                                "type": "float"
+                            }
+                        ],
+                        "index": 3,
+                        "isCloned": true,
+                        "name": "sigRobotControlCmd",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "iType",
+                                "type": "CInterfaceRobotDeep::_ENUM_ROBOT_DEEP_CONTROL_MODE"
+                            }
+                        ],
+                        "index": 4,
+                        "isCloned": true,
+                        "name": "sigRobotControlCmd",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "private",
+                        "index": 5,
+                        "name": "onPushButtonClickedEvent_DeepCtrl",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QWidget"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "widget_deeprobot.hpp",
+        "outputRevision": 68
+    }
+]
