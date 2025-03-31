@@ -88,9 +88,9 @@ private:
 private:
     static CInterfaceRobotDeep* _mInstance;
     QUdpSocket* _mUdpSocket_RobotDeep = nullptr;
-    QString _mRobotDeepIP = "192.168.144.102";
-    quint16 _mRobotDeepPortSend = 2580;
-    quint16 _mRobotDeepPortRecv = 2581;
+    QString _mRobotDeepIP = "192.168.144.110";
+    quint16 _mRobotDeepPortSend = 2581;
+    quint16 _mRobotDeepPortRecv = 2580;
 };
 
 #endif // INTERFACE_ROBOT_DEEP_HPP

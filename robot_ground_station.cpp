@@ -205,6 +205,7 @@ void CRobotGroundStation::createSignalConnectToSlots(){
     connect(CInterfaceRemoteControlSiyi::Instance(),&CInterfaceRemoteControlSiyi::sigRemoteStateResponse,CManagerControlMode::Instance(),&CManagerControlMode::onHandleRemoteStateResponse);
     // ===== 机器人控制 ======
     connect(CManagerControlMode::Instance(),&CManagerControlMode::sigRobotControlCmd,CInterfaceRobotDeep::Instance(),&CInterfaceRobotDeep::onRobotControlEvent);
+    connect(CWidgetDeepRobot::Instance(),&CWidgetDeepRobot::sigRobotControlCmd,CInterfaceRobotDeep::Instance(),&CInterfaceRobotDeep::onRobotControlEvent);
 
 
 }

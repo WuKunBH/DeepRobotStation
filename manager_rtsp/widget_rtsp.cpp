@@ -92,7 +92,7 @@ QWidget* CWidgetRTSP::initializeRTSPShow()
 
     // 监听视频窗口大小变化
     _mVideoWidgetRTSP->installEventFilter(this);
-    _mVideoWidgetRTSP->setFullScreen(true);
+    // _mVideoWidgetRTSP->setFullScreen(true);
 
     return _mVideoWidgetRTSP;
 }
@@ -146,8 +146,9 @@ QWidget* CWidgetRTSP::initializeRTSPCtrl()
     // 创建半透明黑色背景
     // _controlPanel->setStyleSheet("background-color: rgba(0, 0, 0, 180);");
     _controlPanel->setLayout(mLayout_RTSPUrl);
-    _controlPanel->setMinimumWidth(250);
-    _controlPanel->setMaximumWidth(250);
+    _controlPanel->setFixedWidth(0);
+    _controlPanel->hide();
+
     return _controlPanel;
 }
 
@@ -313,9 +314,13 @@ void CWidgetRTSP::onPushButtonClickedEvent(){
     }
     else if(_mPBtn->objectName() == "hideRTSPButton"){
         if(_controlPanel->isHidden()) {
+            _controlPanel->setFixedWidth(250);
             _controlPanel->show();
+
         }
         else {  // 隐藏
+            _controlPanel->setFixedWidth(0);
+
             _controlPanel->hide();
         }        
     }
