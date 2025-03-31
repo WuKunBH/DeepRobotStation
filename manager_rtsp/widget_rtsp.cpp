@@ -266,19 +266,6 @@ QPushButton* CWidgetRTSP::makeupWidgetPushBtn(QString iName, QString iObject,int
     QPushButton* mPushBtn = new QPushButton;
     mPushBtn->setText(iName);
     mPushBtn->setObjectName(iObject);
-
-    // // 设置按钮样式
-    // QString buttonStyle = "QPushButton { "
-    //                       "  background-color: rgba(255, 255, 255, 200); "
-    //                       "  border-radius: 4px; "
-    //                       "  padding: 5px; "
-    //                       "  min-width: 30px; "
-    //                       "} "
-    //                       "QPushButton:hover { "
-    //                       "  background-color: rgba(200, 200, 200, 255); "
-    //                       "}";
-
-    // mPushBtn->setStyleSheet(buttonStyle);
     if (iSlotType == 0)  {  
         connect(mPushBtn, &QPushButton::clicked, this, &CWidgetRTSP::onPushButtonClickedEvent);     
     }

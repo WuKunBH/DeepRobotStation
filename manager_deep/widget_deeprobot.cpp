@@ -44,11 +44,11 @@ QWidget* CWidgetDeepRobot::createWidgetCtrlDeep() // 创建机器狗控制
     _mLayoutMain->setContentsMargins(0,0,0,0);
     _mLayoutMain->setSpacing(2);
     // ------第1行 ------------------
-    _mLayoutMain->addWidget(this->makeupWidgetPushBtn("起立/趴下",  "_mBtnDeepRobot_StandUp"),  0, 0,1,1); // 机器狗起立/趴下
-    _mLayoutMain->addWidget(this->makeupWidgetPushBtn("软急停",     "_mBtnDeepRobot_SoftStop"), 0, 1,1,1); // 机器狗软急停
+    _mLayoutMain->addWidget(this->makeupWidgetPushBtn("起立/趴下",  "_mBtnDeepRobot_StandUp"),  0, 4,1,1); // 机器狗起立/趴下
+    _mLayoutMain->addWidget(this->makeupWidgetPushBtn("软急停",     "_mBtnDeepRobot_SoftStop"), 0, 3,1,1); // 机器狗软急停
     _mLayoutMain->addWidget(this->makeupWidgetPushBtn("回零",       "_mBtnDeepRobot_Reset"),    0, 2,1,1); // 机器狗回零
-    _mLayoutMain->addWidget(this->makeupWidgetPushBtn("原地模式",   "_mBtnDeepRobot_Patrol"),   0, 3,1,1); // 机器狗原地模式
-    _mLayoutMain->addWidget(this->makeupWidgetPushBtn("移动模式",   "_mBtnDeepRobot_Move"),     0, 4,1,1); // 机器狗移动模式
+    _mLayoutMain->addWidget(this->makeupWidgetPushBtn("原地模式",   "_mBtnDeepRobot_Patrol"),   0, 1,1,1); // 机器狗原地模式
+    _mLayoutMain->addWidget(this->makeupWidgetPushBtn("移动模式",   "_mBtnDeepRobot_Move"),     0, 0,1,1); // 机器狗移动模式
     // 
     // ------第2行 ------------------
     _mLayoutMain->addWidget(this->makeupWidgetPushBtn("平地低速步态","_mBtnDeepRobot_FlatWalkSlow"),        1, 0,1,1); // 机器狗平地低速步态
@@ -75,19 +75,6 @@ QPushButton* CWidgetDeepRobot::makeupWidgetPushBtn(QString iName, QString iObjec
     QPushButton* mPushBtn = new QPushButton;
     mPushBtn->setText(iName);
     mPushBtn->setObjectName(iObject);
-   
-    // // 设置按钮样式
-    // QString buttonStyle = "QPushButton { "
-    //                       "  background-color: rgba(255, 255, 255, 200); "
-    //                       "  border-radius: 4px; "
-    //                       "  padding: 5px; "
-    //                       "  min-width: 30px; "
-    //                       "} "
-    //                       "QPushButton:hover { "
-    //                       "  background-color: rgba(200, 200, 200, 255); "
-    //                       "}";
-
-    // mPushBtn->setStyleSheet(buttonStyle);
     connect(mPushBtn, &QPushButton::clicked, this, &CWidgetDeepRobot::onPushButtonClickedEvent_DeepCtrl);
     return mPushBtn;
 }

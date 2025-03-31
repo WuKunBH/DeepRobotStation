@@ -79,9 +79,16 @@ void CRobotGroundStation::setupAndroidFullscreen()
                 const int SYSTEM_UI_FLAG_FULLSCREEN = 0x00000004;
                 const int SYSTEM_UI_FLAG_IMMERSIVE_STICKY = 0x00001000;
                 const int flags = SYSTEM_UI_FLAG_HIDE_NAVIGATION |
-                                SYSTEM_UI_FLAG_FULLSCREEN |
-                                SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
+                                    SYSTEM_UI_FLAG_FULLSCREEN |
+                                    SYSTEM_UI_FLAG_IMMERSIVE_STICKY;
                 decorView.callMethod<void>("setSystemUiVisibility", "(I)V", flags);
+
+                // 设置屏幕常亮
+                const int FLAG_KEEP_SCREEN_ON = 128; // WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON
+                // 禁止锁屏
+                const int FLAG_DISMISS_KEYGUARD = 0x00400000; // WindowManager.LayoutParams.FLAG_DISMISS_KEYGUARD
+                const int FLAG_SHOW_WHEN_LOCKED = 0x00080000; // WindowManager.LayoutParams.FLAG_SHOW_WHEN_LOCKED
+                window.callMethod<void>("addFlags", "(I)V", FLAG_KEEP_SCREEN_ON | FLAG_DISMISS_KEYGUARD | FLAG_SHOW_WHEN_LOCKED);
             }
         }
     }
